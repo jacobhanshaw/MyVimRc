@@ -1,0 +1,2 @@
+# MyVimRc
+$MYVIMRC
