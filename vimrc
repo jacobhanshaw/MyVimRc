@@ -74,6 +74,9 @@ let g:indent_guides_guide_size=1
 "hi IndentGuidesEven ctermbg=lightgrey
 
 "Syntastic
+let g:syntastic_quiet_messages = {'level': 'warnings'}
+let g:syntastic_scss_checkers=[''] "http://stackoverflow.com/questions/29041876/fixing-syntasticcheck-bootstrap-error-vim-syntastic-plugin
+let g:syntastic_ruby_checker_args = '--ignore=E225'
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
