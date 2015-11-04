@@ -54,7 +54,7 @@ set hlsearch
 set visualbell
 set confirm 
 set number
-autocmd BufWritePre * :normal gg=G
+autocmd BufWritePre * :normal mqgg=G`q
 "Colorscheme
 colorscheme molokai
 
