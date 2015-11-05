@@ -64,6 +64,7 @@ au FileType python set ts=2 sts=2 sw=2 "et
 "
 "NerdTree shortcur
 map <C-o> :NERDTreeToggle<CR>
+let NERDTreeQuitOnOpen = 1
 let g:NERDTreeWinPos = "right"
 
 "Indent Guides
