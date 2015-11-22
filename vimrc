@@ -59,7 +59,9 @@ autocmd BufWritePre * :normal mqgg=G`qzz
 colorscheme molokai
 
 "Pasting
-set pastetoggle=<C-p>
+nnoremap <C-t> :set invpaste paste?<CR>
+set pastetoggle=<C-t>
+set showmode
 
 "Tab spaces
 set ts=2 sts=2 sw=2 "et 
