@@ -54,9 +54,12 @@ set hlsearch
 set visualbell
 set confirm 
 set number
-autocmd BufWritePre * :normal mqgg=G`q
+autocmd BufWritePre * :normal mqgg=G`qzz
 "Colorscheme
 colorscheme molokai
+
+"Pasting
+set pastetoggle=<C-p>
 
 "Tab spaces
 set ts=2 sts=2 sw=2 "et 
@@ -77,7 +80,7 @@ let g:indent_guides_guide_size=1
 "Syntastic
 let g:syntastic_quiet_messages = {'level': 'warnings'}
 let g:syntastic_scss_checkers=[''] "http://stackoverflow.com/questions/29041876/fixing-syntasticcheck-bootstrap-error-vim-syntastic-plugin
-let g:syntastic_ruby_checker_args = '--ignore=E225'
+"let g:syntastic_ruby_checker_args = '--ignore=E225'
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
